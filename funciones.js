@@ -6,7 +6,7 @@ let convers = () =>{
  
     return "el valor de la convertibilidad es" + " " + (montoPesos/310); 
 
-} 
+};
 
  alert(convers()); 
  
@@ -29,3 +29,36 @@ let convers = () =>{
  };
 
     alert(impuestos()); 
+
+
+
+    let entidad = [ {bancos:"galicia"},
+                    {bancos:"Frances"},
+                    {bancos:"Patagonia"},
+                    {bancos:"HSBC"},
+                    {bancos:"ciudad"},
+                    {bancos:"Nuevo Banco"},
+                  ]; 
+    
+      function bancossele (financiera){
+
+        return financiera.bancos = "ciudad"
+      };
+
+      let financias= entidad.find(bancossele);
+      console.log(financias)
+      let nuevoimp = 0;
+     
+      if(financias != "galicia"){ 
+
+        nuevoimp =  (impuesPais / 3)
+
+       alert("Por tener banco ahderidos a AFJP, TU Saldo real de impuesto es " + nuevoimp)
+
+      }else{ 
+
+        alert("tu banco no tiene benefecios")
+      };
+
+      
+      
