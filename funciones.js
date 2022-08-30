@@ -57,5 +57,37 @@ let convers = () =>{
 
       }else{ 
 
-        alert("tu banco no tiene benefecios")
+        alert("tu banco no tiene benefecios");
       };
+    
+ 
+       let prestamos = prompt("Desea adquirir un prestamo personal");
+       let nombre_prestamo = prompt("ingrese su nombre");
+       let apellido_prestamo = prompt("ingrese su apellido");
+       let dni_prestamo = prompt("ingrese su dni");
+       let mail_prestamo = prompt("ingrese su correo");
+
+
+       class Nuevo_prestamo { 
+            constructor (nombre,apellido,dni,email){
+
+                this.nombre=nombre;
+                this.apellido=apellido;
+                this.dni=dni;
+                this.email=email;
+
+
+            };
+
+                saludar(){
+                      
+                   alert("hola estimado" + this.nombre);
+                };
+               
+
+             };
+            
+     let nuevousuario_prestamo = new Nuevo_prestamo (nombre_prestamo,apellido_prestamo,dni_prestamo,mail_prestamo);
+      
+       console.log(nuevousuario_prestamo);
+       
