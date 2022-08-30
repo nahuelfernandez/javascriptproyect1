@@ -57,7 +57,7 @@ let convers = () =>{
 
       }else{ 
 
-        alert("tu banco no tiene benefecios");
+        alert("tu banco no tiene beneficios");
       };
     
  
@@ -66,7 +66,7 @@ let convers = () =>{
        let apellido_prestamo = prompt("ingrese su apellido");
        let dni_prestamo = prompt("ingrese su dni");
        let mail_prestamo = prompt("ingrese su correo");
-
+        
 
        class Nuevo_prestamo { 
             constructor (nombre,apellido,dni,email){
@@ -78,16 +78,18 @@ let convers = () =>{
 
 
             };
-
-                saludar(){
+              saludar (){
                       
-                   alert("hola estimado" + this.nombre);
-                };
+                   console.log("hola estimado",this.nombre);
+            };
                
 
-             };
+             }; 
+            
             
      let nuevousuario_prestamo = new Nuevo_prestamo (nombre_prestamo,apellido_prestamo,dni_prestamo,mail_prestamo);
       
        console.log(nuevousuario_prestamo);
+     nuevousuario_prestamo.saludar();
+      
        
