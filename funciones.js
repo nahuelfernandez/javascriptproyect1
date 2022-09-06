@@ -1,3 +1,4 @@
+/*
 let montoPesos= prompt("ingrese el monto en pesos que desea convertir"); 
 let impuesPais = (montoPesos * (1.35)) - montoPesos; 
 
@@ -90,6 +91,38 @@ let convers = () =>{
      let nuevousuario_prestamo = new Nuevo_prestamo (nombre_prestamo,apellido_prestamo,dni_prestamo,mail_prestamo);
       
        console.log(nuevousuario_prestamo);
-     nuevousuario_prestamo.saludar();
+        nuevousuario_prestamo.saludar(); 
+             */
+
+       let  btn_encuenta = document.getElementById("btn_encuenta");
+
+       btn_encuenta.addEventListener("click",function(){
+
+                   console.log("ya estas participando");
+                  
+       }); 
+
+
+       let inputnombre=document.getElementById("nombre"); 
+       let inputcontacto=document.getElementById("contacto"); 
+       
+       let bottonenviar= document.getElementById("enviar");
+
+       bottonenviar.addEventListener("click",function() {
+
+                 alert ("Gracias" + inputnombre.value+ " nos comunicaremos al numero  "+ "" + inputcontacto.value );
+                
+       });
+
+
+        
+
+            
+        
+          
+      
+
+
+
       
        
