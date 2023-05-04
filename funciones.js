@@ -4,7 +4,7 @@ let impuesPais = (montoPesos * (1.35)) - montoPesos;
 
 let convers = () =>{
  
-    return "el valor de la convertibilidad es" + " " + (montoPesos/310); 
+    return "el valor de la convertibilidad es"  + " " + (montoPesos/496) + "USD"; 
 
 };
 
@@ -15,24 +15,23 @@ let convers = () =>{
 
  let impuestos =() =>{
 
-    if(montoPesos>2000){
+    if(montoPesos>5000){
 
-    return "el total de impuesto es de $ "+ impuesPais +"\n" + " es por haber superado los $2000";
+    return "el total de impuesto es de $ "+ impuesPais +"\n" + " es por haber superado los $5000";
         
     
    }else{
 
-    return "Como no superas los $2000, no debes abonar impuestos";
+    return "Como no superas los $5000, no debes abonar impuestos";
    }
 
-    
+   
  };
 
-    alert(impuestos()); 
+    alert(impuestos());  
 
-
-
-    let entidad = [ {bancos:"galicia"},
+    
+  let entidad = [ {bancos:"galicia"},
                     {bancos:"Frances"},
                     {bancos:"Patagonia"},
                     {bancos:"HSBC"},
@@ -40,18 +39,18 @@ let convers = () =>{
                     {bancos:"Nuevo Banco"},
                   ]; 
     
-      function bancossele (financiera){
+      function bancossele (entidad){
 
-        return financiera.bancos = "ciudad"
+        return entidad.bancos = prompt("ingrese su banco")
       };
-
-      let financias= entidad.find(bancossele);
-      console.log(financias)
+    
+      let finanzas= entidad.find(bancossele);
+      console.log(finanzas)
       let nuevoimp = 0;
      
-      if(financias != "galicia"){ 
+      if(finanzas == "galicia" || "Frances"){ 
 
-        nuevoimp =  (impuesPais / 3)
+        nuevoimp =  (impuesPais / 3);
 
        alert("Por tener banco ahderidos a AFJP, TU Saldo real de impuesto es " + nuevoimp)
 
