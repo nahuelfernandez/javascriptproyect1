@@ -53,4 +53,37 @@ if(auto1.acelerar()|| auto1.frenar()){
         
         }; 
 
-    console.log(contador)
+    console.log(contador);
+
+    
+    let nuevoarray =[5,25,35,55] 
+        //eleva el valor baase por su indice en el array 
+    let modificacionarray = nuevoarray.map((numero,indice)=>numero **indice); 
+    console.log(modificacionarray); 
+
+
+    let productos= [
+      "computadora",
+      "puerta",
+       "mesa" 
+    ]
+     //muestra los id y si quisieramoque muestre cel, comp, se hace con objets.values
+    let simpleproductos = Object.keys(productos); 
+
+    console.log(simpleproductos);
+
+    let incluimos = productos.includes("computadora");
+    console.log(incluimos);
+
+
+    let totalproductos= Object.values(productos);
+    console.log(totalproductos); 
+
+    const arrayDeStrings = ["2", "3", "5.5", "7", "8.5"];
+let suma = 0;
+
+for (let i = 0; i < arrayDeStrings.length; i++) {
+  suma += parseFloat(arrayDeStrings[i]);
+}
+
+console.log(suma)
