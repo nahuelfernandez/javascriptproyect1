@@ -25,11 +25,18 @@ class Compra {
         console.log(this.#nuevosproductos)
     };
 
-    getProductById(){
+    getProductById(id){ 
+        const nombreEncontrado= this.#nuevosproductos.find(nombres => nombres.id ===id)
+ 
+        if(nombreEncontrado){
+            console.log(nombreEncontrado)
+        }else{
+            console.log("NOT FOUND")
+        };
 
-        
-          
-   };
+
+
+    };
 };
 
  let nuevo = new Compra(); 
@@ -42,4 +49,4 @@ nuevo.addProduct("Pedro",31414513,"rosario");
 nuevo.getProduct();
 
 
-nuevo.getProductById();
+nuevo.getProductById(1);
